@@ -1,0 +1,9 @@
+const SET_LANG = 'SET_LANG';
+const SET_LANG_SUCCESS = 'SET_LANG_SUCCESS';
+const SET_LANG_FAIL = 'SET_LANG_FAIL';
+
+export default {
+  SET_LANG,
+  SET_LANG_SUCCESS,
+  SET_LANG_FAIL
+};

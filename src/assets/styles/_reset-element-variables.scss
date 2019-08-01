@@ -1,0 +1,52 @@
+/*
+ * 重新定义 element-ui 的样式变量
+ */
+$--color-primary: #4e7adc;
+$--color-success: #73C41D;
+$--color-warning: #eb9e05;
+$--color-danger: #d33e3e;
+$--color-info: #a5a8af; 
+
+$--color-text-primary: #3d3d3d;
+$--color-text-placeholder: #c3c3c3;
+
+$--background-color-base: #ffffff;
+
+$--border-radius-base: 4px;
+$--border-radius-small: 2px;
+$--border-radius-large: 6px;
+
+$--fill-base: $--background-color-base;
+
+$--font-path: '../../../node_modules/element-ui/lib/theme-chalk/fonts';
+
+$--notification-width: auto;
+$--notification-padding: 10px 54px 10px 13px;
+$--notification-raduis: 4px;
+
+$--button-font-size: 14px;
+
+$--button-medium-font-size: 12px;
+$--button-medium-padding-vertical: 10px;
+$--button-medium-padding-horizontal: 20px;
+
+$--button-small-font-size: 12px;
+$--button-small-padding-vertical: 9px;
+$--button-small-padding-horizontal: 15px;
+
+$--button-mini-font-size: 12px;
+$--button-mini-padding-vertical: 7px;
+$--button-mini-padding-horizontal: 15px;
+
+$--switch-core-border-radius: 20px;
+$--switch-width: 44px;
+$--switch-height: 22px;
+$--switch-button-size: 18px;
+
+
+$--dialog-font-size: 16px;
+$--dialog-padding-primary: 24px;
+
+$--pagination-font-size: 14px;
+
+$--input-border-color: #A5A8AF;

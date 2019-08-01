@@ -1,0 +1,38 @@
+html, body {
+  font-size: 14px;
+  height: 100%;
+  min-width: 1280px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+#app {
+  height: 100%;
+  min-height: 400px;
+  overflow: auto;
+}
+
+/**
+ * 覆盖原生 html 样式
+ **/
+ @import '_reset-html';
+
+/**
+ * 覆盖 element 的原有主题样式, 具体可参考: http://element-cn.eleme.io/#/zh-CN/component/custom-theme 
+ **/
+@import '_reset-element-variables';
+@import './node_modules/element-ui/packages/theme-chalk/src/index';
+
+/**
+ * 自定义的一些 scss 变量
+ **/
+ @import '_common-variables';
+
+/**
+ * 通用样式, 包括 padding, margin, font, color, background 等
+ **/
+ @import '_common';
+
+/**
+ * 重写部分 element 组件样式 
+ **/
+@import '_reset-element-ui';

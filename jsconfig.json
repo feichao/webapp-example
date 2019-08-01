@@ -1,0 +1,14 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@assets": ["./src/assets"],
+      "@business": ["./src/business"],
+      "@constants": ["./src/constants"],
+      "@utils": ["./src/utils"],
+      "@config": ["./src/config"],
+    }
+  }
+}

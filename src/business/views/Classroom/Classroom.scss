@@ -1,0 +1,34 @@
+.classroom {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+  width: 640px;
+}
+
+.classroom-item {
+  flex: 0 0 31%;
+  position: relative;
+  &:nth-child(3n + 1), &:nth-child(3n + 2) {
+    margin-right: 3.5%;
+  }
+}
+
+.classroom-item-action {
+  background: rgba(0, 0, 0, .4);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.content {
+  border-top: 2px solid rgba(0, 0, 0, .1);
+  flex: 1;
+}
+
+.footer {
+  border-top: 2px solid rgba(0, 0, 0, .1);
+  height: 45px;
+}

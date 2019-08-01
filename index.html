@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>webapp-example</title>
+    <% for (var chunk in htmlWebpackPlugin.options.heads) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.heads[chunk]].entry %>"></script>
+    <% } %>
+    <% if (htmlWebpackPlugin.options.reportMY) { %>
+    <script defer src="//myou.cvte.com/apm/sdk/reporter.js?appId=<%= htmlWebpackPlugin.options.reportMY %>"></script>
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <% for (var chunk in htmlWebpackPlugin.options.bodys) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[htmlWebpackPlugin.options.bodys[chunk]].entry %>"></script>
+    <% } %>
+    <% if (htmlWebpackPlugin.options.commitId) { %>
+    <div class="hidden"><%- htmlWebpackPlugin.options.commitId %>-<%- htmlWebpackPlugin.options.compileTime %></div>
+    <% } %>
+  </body>
+</html>
